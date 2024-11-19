@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: [self-hosted, gpu]
+    runs-on: [self-hosted, cpu]
     env:
       ACTIONS_RUNNER_DEBUG: 'true'
       ACTIONS_STEP_DEBUG: 'true'
@@ -39,5 +39,6 @@ jobs:
           echo "Deploying documentation..."
           pwd
           echo "Copying files to /home/wenhao/tmp/gsmap_docs"
-          cp -r diary/build/html/* /home/wenhao/tmp/gsmap_docs
+          cp -r diary/build/html/* /home/chenwenhao/project/gsmap_docs
+#          cp -r diary/build/html/* /home/wenhao/tmp/gsmap_docs
 

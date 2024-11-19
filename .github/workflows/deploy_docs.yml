@@ -36,5 +36,8 @@ jobs:
       # You can move or copy the built files as needed
       - name: Deploy Documentation
         run: |
+          echo "Deploying documentation..."
+          pwd
+          echo "Copying files to /home/wenhao/tmp/gsmap_docs"
           cp -r build/html/* /home/wenhao/tmp/gsmap_docs
 

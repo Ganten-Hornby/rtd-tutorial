@@ -39,5 +39,5 @@ jobs:
           echo "Deploying documentation..."
           pwd
           echo "Copying files to /home/wenhao/tmp/gsmap_docs"
-          cp -r build/html/* /home/wenhao/tmp/gsmap_docs
+          cp -r diary/build/html/* /home/wenhao/tmp/gsmap_docs
 

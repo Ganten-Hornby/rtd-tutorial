@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted  # Specify self-hosted runner
+    runs-on: [self-hosted, gpu]
     env:
       ACTIONS_RUNNER_DEBUG: 'true'
       ACTIONS_STEP_DEBUG: 'true'
